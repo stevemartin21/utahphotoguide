@@ -1,0 +1,29 @@
+nav{
+max-width: 100%;
+height: 200px;
+background-color: gray;
+
+
+}
+
+
+ul{
+list-style-type: none;
+
+
+}
+
+
+
+li {
+
+text-decoration: none;
+
+float: right;
+}
+
+a{
+text-align: center;
+
+}
+

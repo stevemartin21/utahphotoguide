@@ -1,0 +1,424 @@
+* {
+margin: 0;
+padding: 0;
+}
+ body{
+background-color: #b3c2bf;
+ }
+
+#bodywrapper{
+	max-width: 80%;
+}
+
+/*
+background-image: url("snowbird tram.jpg");
+
+min-height: 400px;
+background-size: 100% 100%;
+background-repeat:no-repeat;
+
+
+}
+*/
+h1{
+text-align:center;
+
+}
+
+/*
+#moneyshot h1{
+
+	padding:100px;
+	margin: 200px;
+
+}*/
+nav{
+
+
+
+
+}
+
+
+nav ul{
+list-style-type: none;
+text-decoration: none;
+max-width: 80%;
+margin: 0 auto;
+
+background-color: #2F4F4F;
+text-align: center;
+border: solid black 1px;
+border-radius: 20px;
+max-height: 0px;
+-webkit-transition: max-height 0.4s;
+-ms-transition: max-height 0.4s;
+-moz-transition: max-height 0.4s;
+-o-transition: max-height 0.4s;
+transition: max-height 0.4s;
+
+
+
+}
+
+.showing{
+	max-height: 20em;
+
+}
+
+li {
+padding:10px;
+color: White;
+font-size: .8em;
+
+}
+
+a{
+text-align: center;
+color: black;
+text-decoration: non;
+}
+
+li:hover{
+color:black;
+background-color: white;
+
+}
+
+
+
+
+
+
+
+.wrapper{
+	max-width: 80%;
+	margin: 0 auto;
+
+
+
+}
+
+
+.handle {
+
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 15px;
+	cursor: pointer;
+	
+
+
+}
+
+.handle button{
+	
+	width:100%;
+	background-color: #173e43;
+	padding: 20px;
+	border: solid black 2px;
+	border-radius: 20px;
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Inconsolata', monospace;
+}
+
+.handle button:hover{
+	border: solid white 2px;
+	
+
+	
+	
+}
+
+.gallery{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+.gallery img{
+margin: auto;
+width:100%;
+height:200px;
+border:solid black 2px;
+border-radius: 20px;
+
+}
+
+.gallery img:hover{
+
+border:solid white 2px;
+
+}
+
+
+.desc{
+text-align:center;
+font-size: 1em;
+padding: .5em;
+background-color: #2F4F4F;
+border: solid black 1px;
+border-radius: 10px;
+color:white;
+
+
+}
+
+.longitude{
+	border:black solid 1px;
+	color: white;
+	border-radius: 20px;
+	background-color:#173e43;
+
+}
+
+.lattitude{
+	border:black solid 1px;
+	color: white;
+	border-radius: 20px;
+	background-color:#173e43;;
+
+}
+
+.slideshowbtn{
+
+	text-align: center;
+	padding:20px;
+	background-color: #173e43;
+	margin: 20px 10px;
+	width: 40%;
+	float: left;
+	border-radius: 20px;
+	border: solid black 2px;
+	margin-top: 20px;
+	color:white;
+	font-size: 1.5em;
+
+}
+
+
+
+#slideshowwrapper{
+width:80%;
+margin:0 auto;
+
+
+}
+
+#buttonwrapper{
+	width:80%;
+	margin:0 auto;
+
+}
+
+#moneyshot{
+	
+
+max-width: 90%;
+min-height: 200px;
+margin: 0 auto;}
+
+#moneyshot img{
+
+	max-width: 100%;
+	border: solid black 1px;
+	border-radius: 10px;
+
+}
+
+#moneyshot img:hover{
+
+	
+	border: solid white 1px;
+	
+}
+
+#explainer{
+	width:100%;
+	background-color:#2F4F4F;
+	text-align: center;
+	margin-top: 20px;
+	color:white;
+	padding:1px;
+	border: solid black 2px;
+	border-radius: 10px;
+	-webkit-transition: max-height 0.4s;
+
+}
+
+#explainer:hover{
+	
+	
+	border: solid white 2px;
+	
+
+}
+#explainer h1{
+	margin: 5px;
+	color: black;
+}
+
+#explainer p {
+	margin-bottom: 10px;
+
+}
+
+#interaction{
+
+	width:60%;
+	background-color:#2F4F4F;
+	text-align: center;
+	margin: 20px auto;
+	color:white;
+	padding:1px;
+	border: solid black 2px;
+	border-radius: 10px;
+	text-decoration: none;
+	
+}
+
+#interaction ul{
+
+		text-decoration: none;
+		list-style-type: none;
+	
+}
+
+
+/*This is a wrapper specifically for the image gallery*/
+#imagegallery{
+
+width:80%;
+margin: 0 auto;
+
+}
+
+footer{
+
+margin-top: 20px;
+
+
+
+
+}
+
+footer ul{
+	margin-top: 20px;
+	text-decoration: none;
+	list-style-type: none;
+	background-color: #173e43;
+	border: solid black 2px;
+	border-radius: 20px;
+	padding: 20px 0px;
+	text-align: center;
+	font-size: 1em;
+
+	
+}
+
+footer ul li{
+	display: inline;
+	text-decoration: none;
+	list-style-type: none;
+	
+}
+
+.footerwrapper{
+	width:80;
+	margin:20px auto;
+	clear: both;
+
+}
+
+
+@media only screen and (min-width: 760px) {
+    
+
+    .gallery{
+    		float:left;
+    		width:30%;
+    		margin: 20px 10px 20px 0;
+    		box-sizing: border-box;
+    		
+    		
+
+    }
+
+    nav ul {
+    
+    	width:80%;
+    	margin: 0 auto;
+
+    }
+
+    nav ul li{
+		display: inline-block;
+		padding:20px;
+
+    }
+    #slideshowwrapper{
+		width:60%;
+		margin:0 auto;
+		}
+
+
+
+
+    }
+    #map{
+
+		width:80%;
+		height: 400px;}
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+	
+
+
+    .gallery{
+    		float:left;
+    		width:30%;
+    		margin: 20px 10px 20px 0;
+    		box-sizing: border-box;
+
+    }
+
+    
+  /* .handle{
+    	display:none;*/
+
+
+    }
+
+    nav ul {
+    	display: inline-block;
+    	width:80%;
+    	margin:0 auto;
+
+    }
+     nav ul li{
+		display: inline-block;
+		padding:20px;
+		text-align: right;
+
+    }
+   
+#slideshowwrapper{
+width:60%;
+margin:0 auto;
+
+}
+			#map{
+
+			width:80%;
+			height: 500px;}
+
+			
+
+
+}

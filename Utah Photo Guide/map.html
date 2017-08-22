@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+<style> #map {
+       	height: 200px;
+        width:80%;
+        margin:auto;
+        border:solid black 2px;
+      }
+
+    #map:hover{
+    	border: solid white 4px;
+
+    }
+
+ </style>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("nav ul").toggle('showing');
+    });
+});
+</script>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+
+</head>
+
+<body>
+
+
+
+<nav>
+  <div class="handle">
+    <button><h1> Utah Photo Guide <i class="fa fa-camera" aria-hidden="true"></i></h1> <p> --Your Adventure Starts Here--</p><button>
+  </div>
+  <ul class="showing">
+
+  <div id="div_id"></div> <!--This is for the back to top button-->
+    <a href="index.html"><li><i class="fa fa-camera-retro"></i>Home </li></a>
+    <a href="gallery.html"><li><i class="fa fa-image"></i>Gallery</li></a>
+    <a href="Slideshow.html"><li><i class="fa fa-file-photo-o"></i>Slideshow</li></a>
+    <a href="map.html"><li><i class="fa fa-map-o"></i>Map</li></a>
+    <a href="submit.html"><li><i class="fa fa-envelope"></i>Submit</li></a>
+    <a href="contact.html"><li><i class="fa fa-address-card"></i>Contact</li></a>
+    
+        
+  </ul> 
+  
+</nav>
+
+		<h1>My Google Map</h1>
+    <div id="map"></div>
+    <script>
+     
+      function initMap() {
+      	var options ={
+      		zoom: 8,
+      		center:{lat: 40.636662, lng: -111.257429 },
+
+      	}
+        
+      //New Map
+      var map = new
+      google.maps.Map(document.getElementById('map'),options);
+
+      //add marker
+
+      var marker = new google.maps.Marker({
+      	position: {lat: -34.397, lng: 150.644 },
+      	map:map,
+
+
+
+      });
+
+      var marker = new google.maps.Marker({
+      	position: {lat: 40.636662, lng: -111.257429 },
+      	map:map,
+      	
+
+
+      });
+  }
+
+
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIDIRBJgTf0XG67zZ5X4VApGq4BoJTYLw&callback=initMap"
+    async defer></script>
+
+<div class="footerwrapper">
+<footer>
+  
+
+<!--insert copywrite, links, find out other things to put in the footer etc..., links to social media, etc..-->
+
+
+
+<ul>
+<a href="https://www.facebook.com/utahphotoguide/"><li> <i class="fa fa-facebook-official"></i></i>Like Us</li></a>
+<a href="https://www.instagram.com/mrawesomesteve"><li> <i class="fa fa-instagram"></i>Follow Us</li></a>
+<a href="#div_id"><li> <i class="fa fa-hand-o-up"></i></i>Back to Top</li></a>
+
+
+
+
+</ul>
+
+</footer>
+</div>
+
+  </body>
+</html>
+
+</html>

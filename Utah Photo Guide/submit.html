@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="formstyles.css">
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("nav ul").toggle('showing');
+    });
+});
+</script>
+</head>
+<body>
+
+
+
+
+<nav>
+  <div class="handle">
+    <button><h1> Utah Photo Guide <i class="fa fa-camera" aria-hidden="true"></i></h1> <p> --Your Adventure Starts Here--</p><button>
+  </div>
+  <ul class="showing">
+
+  <div id="div_id"></div> <!--This is for the back to top button-->
+    <a href="index.html"><li><i class="fa fa-camera-retro"></i>Home </li></a>
+    <a href="gallery.html"><li><i class="fa fa-image"></i>Gallery</li></a>
+    <a href="Slideshow.html"><li><i class="fa fa-file-photo-o"></i>Slideshow</li></a>
+    <a href="map.html"><li><i class="fa fa-map-o"></i>Map</li></a>
+    <a href="submit.html"><li><i class="fa fa-envelope"></i>Submit</li></a>
+    <a href="contact.html"><li><i class="fa fa-address-card"></i>Contact</li></a>
+    
+        
+  </ul> 
+  
+</nav>
+
+
+
+
+
+<div class="wrapper">
+
+<div class="header">
+  SUBMIT YOUR SHOT
+
+</div>
+
+
+
+<div class="container">
+  <h1>Contact Info</h1>
+  <form>
+
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+    <label for="Email">Email Address</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+<label for="Phone">Phone Number</label>
+    <input type="text" id="Phone" name="Phone" placeholder="Your Phone Number..">
+
+
+    <label for="Address">Street Address</label>
+    <input type="text" id="Address" name="Address" placeholder="Your Address..">
+
+    <label for="City">City</label>
+    <input type="text" id="City" name="Email" placeholder="Your City..">
+
+    
+<!--I need to add the states here and a list of them-->
+
+
+    <label for="State">State</label>
+    <select id="State" name="State">
+      <option value="utah">Utah</option>
+    </select>
+
+     <label for="Zip">Zip Code</label>
+    <input type="text" id="Zip" name="Zip" placeholder="Your Zip Code..">
+
+    
+
+
+    <h1>Photo Location</h1>
+  <label for="Longitude">Longitude</label>
+    <input type="text" id="Longitude" name="Longitude" placeholder="Longitude..">
+    <label for="Latitude">Latitude</label>
+    <input type="text" id="Latitude" name="Latitude" placeholder="Latitude..">
+      <!--THis is where I have them up load a picture-->
+      
+       <label for="subject">Describe where the picture was taken</label>
+    <textarea id="subject" name="subject" placeholder="Describe where the picture was taken.." style="height:200px"></textarea>
+
+    <h1>Submit Photo</h1>
+
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+
+     
+
+
+    <h3>Copyright Utah Photo Guide</h3>
+    </div>
+  </form>
+</div>
+</div>
+</body>
+</html>

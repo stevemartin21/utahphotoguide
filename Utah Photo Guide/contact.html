@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="formstyles.css">
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("nav ul").toggle('showing');
+    });
+});
+</script>
+</head>
+<body>
+
+
+
+
+<nav>
+  <div class="handle">
+    <button><h1> Utah Photo Guide <i class="fa fa-camera" aria-hidden="true"></i></h1> <p> --Your Adventure Starts Here--</p><button>
+  </div>
+  <ul class="showing">
+
+  <div id="div_id"></div> <!--This is for the back to top button-->
+    <a href="index.html"><li><i class="fa fa-camera-retro"></i>Home </li></a>
+    <a href="gallery.html"><li><i class="fa fa-image"></i>Gallery</li></a>
+    <a href="Slideshow.html"><li><i class="fa fa-file-photo-o"></i>Slideshow</li></a>
+    <a href="map.html"><li><i class="fa fa-map-o"></i>Map</li></a>
+    <a href="submit.html"><li><i class="fa fa-envelope"></i>Submit</li></a>
+    <a href="contact.html"><li><i class="fa fa-address-card"></i>Contact</li></a>
+    
+        
+  </ul> 
+  
+</nav>
+
+
+<div class="wrapper">
+
+
+
+
+<div class="subheader">
+    <h1>Sign up for our free newsletter</h1>
+    
+</div>
+
+<div class="container">
+  <h1>Contact Info</h1>
+  <form>
+
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+    <label for="Email">Email Address</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+<label for="Phone">Phone Number</label>
+    <input type="text" id="Phone" name="Phone" placeholder="Your Phone..">
+
+
+    <label for="Address">Street Address</label>
+    <input type="text" id="Address" name="Address" placeholder="Your Address..">
+
+    <label for="City">City</label>
+    <input type="text" id="City" name="Email" placeholder="Your City..">
+
+    <!--again i need to put the states in here-->
+
+    <label for="State">State</label>
+    <select id="State" name="State">
+      <option value="Utah">Utah</option>
+     
+    </select>
+
+     <label for="Zip">Zip Code</label>
+    <input type="text" id="Zip" name="Zip" placeholder="Your Zip Code..">
+
+
+
+<div class="lowersection">
+
+<h1>Newsletter</h1>
+
+<h2>Select the Newsletter you would like to receive</h2>
+
+   <input type="checkbox" name="language" value="HTML"> Adventures<br>
+  <input type="checkbox" name="language" value="CSS"> Photo Spots <br>
+  <input type="checkbox" name="language" value="Javascript"> Tips and Tricks <br>
+
+  <p>Newsletter Format</p>
+
+  <input type="radio" name="format" value="HTML" checked> HTML<br>
+  <input type="radio" name="format" value="Plain text"> Plain Text<br>
+
+    <label for="subject">Other Topics You would like to hear about</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Sign up">
+
+    <h3>Copyright Utah Photo Guide Review</h3>
+    </div>
+  </form>
+</div>
+</div>
+</body>
+</html>
